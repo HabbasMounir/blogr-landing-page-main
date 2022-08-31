@@ -7,7 +7,9 @@
     /* colors */
     --CTA-text:hsl(356, 100%, 66%);
     --CTA-hoverBackground:hsl(355, 100%, 74%);
-    
+    --mix:linear-gradient(to right, var(--very-Light-red), var(--Light-red));
+
+
     --headings:hsl(208, 49%, 24%);
     --White-text:hsl(0, 0%, 100%);
     --FOOTER-text:hsl(240, 2%, 79%);
@@ -38,12 +40,10 @@
 }
 .desaturated{
     color: var(--Very-dark-gray-blue);
-    /* font-weight: 500; */
     font-size: 16px;
 }
 .dropped__show a{
     color: var(--FOOTER-text);
-
 }
 .dropped__show a:hover{
     color: var(--BODY-copy);
@@ -158,6 +158,10 @@ a{
     padding:  10px 20px;
     
 }
+.Btn:hover{
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
 .Btn_{
     font-family: var(--Overpass);
     font-size: 16px;
@@ -185,19 +189,22 @@ a{
     color: var(--White-text);
 }
 .btn--signUp:hover{
-    -webkit-text-fill-color: transparent; 
-    -webkit-background-clip: text;
-    background-clip: text; 
+
+    background: transparent;
+    color: var(--White-text) ;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.055);
+
 }
 .Btn--free:hover{
     color: var(--White-text);
     background: rgba(255, 255, 255, 0.068);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.055);
+
 }
 .Btn--Learn:hover{
     color: var(--Light-red) ;
     background: var(--White-text); 
+
 }
 .header__main{
     margin-top: 100px;
@@ -476,6 +483,13 @@ footer{
         background:  linear-gradient(to right, var(--very-Light-red), var(--Light-red));
         color: var(--White-text) ;
     }
+    .btn--signUp:hover{
+        background:  linear-gradient(to right, var(--very-Light-red), var(--Light-red));
+        filter: brightness(110%);
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.055);
+    
+    }
+
     .Btn--log{
         color: var(--Very-dark-desaturated-blue);
     }
