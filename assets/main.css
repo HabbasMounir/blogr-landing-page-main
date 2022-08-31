@@ -8,7 +8,9 @@
     --CTA-text:hsl(356, 100%, 66%);
     --CTA-hoverBackground:hsl(355, 100%, 74%);
     --mix:linear-gradient(to right, var(--very-Light-red), var(--Light-red));
-
+    --mix1:linear-gradient(to top, var(--very-Light-red), var(--Light-red));
+    --mix2:linear-gradient(to left, var(--Very-dark-desaturated-blue), var(--Very-dark-gray-blue));
+    --mix3:linear-gradient(to top, var(--Very-dark-desaturated-blue), var(--Very-dark-gray-blue));
 
     --headings:hsl(208, 49%, 24%);
     --White-text:hsl(0, 0%, 100%);
@@ -25,6 +27,35 @@
     --Ubuntu: Ubuntu;
     --Overpass:Overpass
 }
+
+::-webkit-scrollbar {
+    width: 15px;
+    
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--mix3); 
+
+    
+    border-radius: 0px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--mix1); 
+
+  }
+
+
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -70,8 +101,8 @@ nav{
 }
 header{
     padding: 3vh 10vw ;
-    background: url(./images/bg-pattern-intro-desktop.svg),  linear-gradient(to bottom, var(--very-Light-red), var(--Light-red));
-    background-position: left -500px center;
+    background: url(./images/bg-pattern-intro-desktop.svg),  var(--mix);
+    background-position: left -500px center , center;
     height: 60vh;
     border-radius: 0 0 0 120px;
     overflow: hidden;
@@ -278,7 +309,7 @@ grid-template-areas:
     align-items: center;
     align-self: space-between;
     justify-content: space-around;
-    background: url(./images/bg-pattern-circles.svg), linear-gradient(to left, var(--Very-dark-desaturated-blue), var(--Very-dark-gray-blue));
+    background: url(./images/bg-pattern-circles.svg), var(--mix2);
     background-repeat: no-repeat;
     
     background-position: -300px -600px ,center;
@@ -416,8 +447,10 @@ footer{
         }
     header{
         padding: 3vh 10vw ;
-        background: url(./images/bg-pattern-intro-desktop.svg),  linear-gradient(to bottom, var(--very-Light-red), var(--Light-red));
-        background-position: left -500px center;
+        background: url(./images/bg-pattern-intro-desktop.svg), var(--mix);
+
+        background-position: left -500px center , center;
+
         height: 60vh;
         border-radius: 0 0 0 120px;
         overflow: hidden;

@@ -5,11 +5,10 @@ let btn__dropsvg= document.querySelectorAll(".btn--drop svg")
 
 btn__drop.forEach((e ,i) => {
     e.addEventListener("click", click => {
-       
         if(dropped__show[i].classList.contains("dropped__show1")){
-                               dropped__show.forEach(e=>e.classList.remove('dropped__show1'))
-                               btn__drop.forEach(e=>e.classList.remove('btn--drop1'))
-                               btn__dropsvg.forEach(e=>e.classList.remove('rotate'))
+                            dropped__show.forEach(e=>e.classList.remove('dropped__show1'))
+                            btn__drop.forEach(e=>e.classList.remove('btn--drop1'))
+                            btn__dropsvg.forEach(e=>e.classList.remove('rotate'))
 
         }else{
             dropped__show.forEach(e=>e.classList.remove('dropped__show1'))
