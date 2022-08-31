@@ -70,7 +70,7 @@ nav{
 }
 header{
     padding: 3vh 10vw ;
-    background: url(./assets/images/bg-pattern-intro-desktop.svg),  linear-gradient(to bottom, var(--very-Light-red), var(--Light-red));
+    background: url(./images/bg-pattern-intro-desktop.svg),  linear-gradient(to bottom, var(--very-Light-red), var(--Light-red));
     background-position: left -500px center;
     height: 60vh;
     border-radius: 0 0 0 120px;
