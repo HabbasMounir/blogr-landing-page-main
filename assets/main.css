@@ -70,7 +70,7 @@ nav{
 }
 header{
     padding: 3vh 10vw ;
-    background: url(/assets/images/bg-pattern-intro-desktop.svg),  linear-gradient(to bottom, var(--very-Light-red), var(--Light-red));
+    background: url(./assets/images/bg-pattern-intro-desktop.svg),  linear-gradient(to bottom, var(--very-Light-red), var(--Light-red));
     background-position: left -500px center;
     height: 60vh;
     border-radius: 0 0 0 120px;
@@ -278,9 +278,10 @@ grid-template-areas:
     align-items: center;
     align-self: space-between;
     justify-content: space-around;
-    background: url(/assets/images/bg-pattern-circles.svg), var(--Very-dark-gray-blue);
+    background: url(./images/bg-pattern-circles.svg), linear-gradient(to left, var(--Very-dark-desaturated-blue), var(--Very-dark-gray-blue));
     background-repeat: no-repeat;
-    background-position: -300px -600px;
+    
+    background-position: -300px -600px ,center;
     border-radius: 0 50px;
     height: 300px;
 }
@@ -415,7 +416,7 @@ footer{
         }
     header{
         padding: 3vh 10vw ;
-        background: url(/assets/images/bg-pattern-intro-desktop.svg),  linear-gradient(to bottom, var(--very-Light-red), var(--Light-red));
+        background: url(./images/bg-pattern-intro-desktop.svg),  linear-gradient(to bottom, var(--very-Light-red), var(--Light-red));
         background-position: left -500px center;
         height: 60vh;
         border-radius: 0 0 0 120px;
